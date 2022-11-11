@@ -1,0 +1,299 @@
+.promo {
+    margin: 0 auto 150px
+}
+
+.services {
+    margin-bottom: 150px
+}
+
+.services .cards {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer
+}
+
+.services .cards .column {
+    width: 416px
+}
+
+.services .cards .card {
+    position: relative
+}
+
+.services .cards .card:hover::after {
+    opacity: 100%;
+    transition: .5s opacity
+}
+
+.services .cards .card::after {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    content: '';
+    height: 7px;
+    width: 100%;
+    background-color: #018abe;
+    border-radius: 0 0 7px 7px
+}
+
+.services .cards .card:first-child {
+    margin-bottom: 24px
+}
+
+.services .cards .card-text {
+    position: absolute;
+    font-family: 'El Messiri', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    bottom: 60px;
+    left: 40px
+}
+
+.services .cards .card-image {
+    border-radius: 10px
+}
+
+.reviews {
+    margin-bottom: 150px
+}
+
+.reviews .slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1736px;
+    margin: auto;
+    margin-top: 100px
+}
+
+.reviews .slider .slide {
+    background: #018abe;
+    border-radius: 10px;
+    opacity: .4;
+    width: 33%
+}
+
+.reviews .slider .slide-selected {
+    opacity: 1
+}
+
+.reviews .slider .slide-selected .slide-name {
+    font-size: 20px
+}
+
+.reviews .slider .slide-selected .slide-text {
+    font-size: 14px
+}
+
+.reviews .slider .slide-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 40px 0 15px 45px
+}
+
+.reviews .slider .slide-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 140%;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 71px
+}
+
+.reviews .slider-selector {
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    justify-content: space-between;
+    max-width: 124px;
+    margin-bottom: 150px
+}
+
+.reviews .slider-selector .dot {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    opacity: .4;
+    border-radius: 3px
+}
+
+.reviews .slider-selector .selected {
+    opacity: 1
+}
+
+.about {
+    margin-bottom: 150px
+}
+
+.about-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1076px;
+    margin: auto;
+    margin-top: 100px
+}
+
+.about-block-content {
+    max-width: 466px
+}
+
+.about-block-content-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 30px
+}
+
+.about-block-content-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%
+}
+
+.about-block-image {
+    height: 365px;
+    width: 526px;
+    border-radius: 10px
+}
+
+.pricing {
+    margin: 150px auto
+}
+
+.pricing-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1076px;
+    margin: auto;
+    margin-top: 100px
+}
+
+.pricing-list {
+    margin-right: 134px
+}
+
+.pricing-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px
+}
+
+.pricing-list-item-title {
+    position: relative;
+    width: 268px;
+    padding-left: 30px;
+    padding-right: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%
+}
+
+.pricing-list-item-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 9px;
+    background: #018abe;
+    border-radius: 0 50px
+}
+
+.pricing-list-item-price {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%
+}
+
+.pricing-image-caption {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 30px
+}
+
+.locations {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1296px;
+    margin: 150px auto 90px
+}
+
+.locations .location {
+    background: #018abe;
+    border-radius: 10px;
+    width: 392px;
+    height: 290px
+}
+
+.locations .location:not(:last-child) {
+    margin-bottom: 30px
+}
+
+.locations .location-title {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    padding: 35px 0 21px 45px
+}
+
+.locations .location-geo::before {
+    background-image: url(../images/geo.svg)
+}
+
+.locations .location-metro::before {
+    background-image: url(../images/metro.svg)
+}
+
+.locations .location-agreement::before {
+    background-image: url(../images/agreement.svg)
+}
+
+.locations .location-agreement,
+.locations .location-geo,
+.locations .location-metro {
+    position: relative;
+    background: 0 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    padding: 0 0 21px 85px
+}
+
+.locations .location-agreement::before,
+.locations .location-geo::before,
+.locations .location-metro::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 45px;
+    width: 20px;
+    height: 20px
+}
+
+.locations .location-button {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    color: #018abe;
+    background: #fff;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 3px;
+    margin: 0 0 35px 45px;
+    cursor: pointer
+}
